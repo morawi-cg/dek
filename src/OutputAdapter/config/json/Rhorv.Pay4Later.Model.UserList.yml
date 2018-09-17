@@ -1,0 +1,7 @@
+Deko\Model\UserList:
+  properties:
+    list:
+      inline: true
+      type: array<Deko\Model\User>
+  callback_methods:
+    pre_serialize: sortById

@@ -1,0 +1,15 @@
+Deko\Model\User:
+  properties:
+    id:
+      serialized_name: "User ID"
+    firstname:
+      serialized_name: "First Name"
+    lastname:
+      serialized_name: "Last Name"
+    username:
+      serialized_name: "Username"
+    type:
+      serialized_name: "User Type"
+    lastLogin:
+      serialized_name: "Last Login Type"
+      type: DateTime<'c'>

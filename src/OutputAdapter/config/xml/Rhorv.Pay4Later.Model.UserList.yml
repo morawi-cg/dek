@@ -1,0 +1,10 @@
+Deko\Model\UserList:
+  xml_root_name: users
+  properties:
+    list:
+      xml_list:
+        inline: true
+        entry_name: user
+      type: array<Deko\Model\User>
+  callback_methods:
+    pre_serialize: sortById

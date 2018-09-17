@@ -1,0 +1,11 @@
+Deko\Model\UserList:
+  virtual_properties:
+    getIterator:
+      inline: true
+      serialized_name: users
+      type: array<Deko\Model\User>
+  properties:
+    list:
+      exclude: true
+  callback_methods:
+    pre_serialize: sortById

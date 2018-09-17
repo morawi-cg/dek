@@ -1,0 +1,16 @@
+Deko\Model\User:
+  xml_root_name: user
+  properties:
+    id:
+      serialized_name: userid
+    firstname:
+      serialized_name: firstname
+    lastname:
+      serialized_name: lastname
+    username:
+      serialized_name: username
+    type:
+      serialized_name: usertype
+    lastLogin:
+      serialized_name: lastlogintime
+      type: DateTime<'c'>
