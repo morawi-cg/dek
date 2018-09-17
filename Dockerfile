@@ -20,8 +20,8 @@ ENV OUTPUTDIR dek/data/output
 #run apt-get -yq update
 
 # Install the gnu make tool
-
-RUN apt-get -y install  build-essential
+RUN apt-get -y update # essential for the line below to work
+RUN apt-get install -y  build-essential
 
 #sudo apt-get install build-essential cmake unzip pkg-config
  
