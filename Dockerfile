@@ -21,9 +21,12 @@ RUN apt-get -yq install  curl
 
 # Install the PHP echo-system as recuired by specification 
 #RUN apt-get install php7.1 php7.1-json php7.1-xml
-RUN apt-get install php7.1 php-json php-xml
+
+RUN apt-get install php7.2 php-json php-xml
+
 # Install packages: mysql adds a root user with no password
 # ENV DEBIAN_FRONTEND noninteractive
+
 RUN apt-get update && \
   apt-get -yq install mysql-server && \
   rm -rf /var/lib/apt/lists/*
