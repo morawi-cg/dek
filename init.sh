@@ -1,5 +1,5 @@
 #!/bin/bash
-
+MYSQL_PASSWORD=root
 if [ -n "$MYSQL_PASSWORD" ] ; then
 
 	TEMP_FILE='/tmp/mysql-first-time.sql'

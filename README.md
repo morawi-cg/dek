@@ -4,8 +4,9 @@ Dedicated PHP 7.2 & Mysql container, intended for application testing by MoR.
 ## About
 
 This PHP/Mysql container is based on ubuntu:bionic, and has the following in addition:
-This container application will runt the code that will extract data from input files and inject into MysqlDB, it can then be directed to an output file.
+This container application will run the code that will extract data from input files and inject into MysqlDB, it can then be directed to an output file.
 The output file will be an operation that is implemented via a specific script.
+
 * curl
 * Make
 * PHP 7.2
@@ -16,26 +17,22 @@ The output file will be an operation that is implemented via a specific script.
 * Port 3306 is exposed, in case you are not linking containers
 * Allows for a root password to be set when run for the first time
 
-## Example
 
-### Running
-
-Simple, not exposed,(mysql-element):
-
+Example, related to Myql: If not exposed,(mysql-element):
 
 ```shell
 docker run -d --name="mysql-run" \
     -e "MYSQL_PASSWORD=password" \
-    vasansr/ubuntu-mysql
+    
 ```
 
-Exposed: 
+Example, related to Mysql: If Exposed: 
 
 ```shell
 docker run -d --name="mysql-run" \
     -e "MYSQL_PASSWORD=password" \
-    -p 3306:3306 \
-    vasansr/ubuntu-mysql
+    -p 3306:3306 
+    
 ```
 
 Explanation:
