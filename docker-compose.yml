@@ -1,0 +1,28 @@
+version: '2.0'
+services:
+   app:
+    build:
+      context: . 
+    container_name: deko_php
+    ports:
+     - "8000:8000"
+    links:
+      - db
+    networks:
+      - mynet02    
+        
+   db:
+    image: mysql
+    container_name: deko_mysql 
+    environment:
+     - MYSQL_ROOT_PASSWORD=root
+     - MYSQL_DATABASE=users      
+    networks: 
+     - mynet02
+
+networks:
+   mynet02:
+      driver: bridge
+
+
+

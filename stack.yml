@@ -1,0 +1,27 @@
+version: '3.3'
+services:
+   deko01:
+    image: dek1 
+    ports:
+     - "8000:8000"
+       #- "80:80"
+    # - "8009:8009"
+    # - "3306:3306"  
+
+    networks:
+      - mynet02    
+        
+   db:
+    image: mysql 
+    environment:
+    MYSQL_ROOT_PASSWORD: root
+    MYSQL_DATABASE: users      
+    networks: 
+     - mynet02
+
+networks:
+   mynet02:
+     driver: bridge
+
+
+

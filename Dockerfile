@@ -107,7 +107,6 @@ ADD  src .
 
 RUN ["/usr/bin/make","init"]
 
-CMD ["/usr/bin/python","print('Finished the PHP init update')"]
 # Every time its built .i.e this file is used it will need the migrations to be done as instructed.
 
 #ENTRYPOINT ["/usr/bin/make","db-migrations"]

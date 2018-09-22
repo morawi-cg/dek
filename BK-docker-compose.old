@@ -1,0 +1,27 @@
+version: '3.3'
+services:
+   deko01:
+    image: morawi-cg/dek01:latest 
+    #ports:
+    # - "8000:8000"
+    # - "443:443"
+    # - "8009:8009"
+    # - "8443:8443"  
+
+    networks:
+     - mynet02    
+        
+   dbase:
+    image: mysql 
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: users      
+    networks: 
+     - mynet02
+
+networks:
+    mynet02:
+      driver: "bridge"
+
+
+

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<users>
+    <user>
+        <userid>1</userid>
+        <firstname>John</firstname>
+        <surname>Donalds</surname>
+        <username>John01</username>
+        <type>Employee</type>
+        <lastlogintime>12-01-2015 12:01:34</lastlogintime>
+    </user>
+    <user>
+        <userid>2</userid>
+        <firstname>Sam</firstname>
+        <surname>Adams</surname>
+        <username>Sa23</username>
+        <type>Employee</type>
+        <lastlogintime>01-11-2018 13:45:42</lastlogintime>
+    </user>
+    <user>
+        <userid>9</userid>
+        <firstname>Shaunt</firstname>
+        <surname>Stevenson</surname>
+        <username>shaun</username>
+        <type>Employee</type>
+        <lastlogintime>01-02-2015 13:00:00</lastlogintime>
+    </user>
+</users>
+
