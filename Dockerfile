@@ -115,7 +115,7 @@ CMD ["/usr/bin/make","db-migrations"]
 # This command would run as needed to be executed. Its put in the CMD format to avoid issues with shell,(in case its not there).
 # Also so that one can override it at command execution of the container with the command thats after it for testing DB 
 
-CMD ["/usr/bin/php","/usr/dek/console.php", "--inputDirectory=/usr/dek/data/input", "--outputDirectory=/usr/dek/data/output","deko:user-file-converter"]
+CMD ["/usr/bin/php","/usr/dek/src/console.php", "--inputDirectory=/usr/dek/data/input", "--outputDirectory=/usr/dek/data/output","deko:user-file-converter"]
 
 # Testing purpose
 
