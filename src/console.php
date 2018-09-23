@@ -1,8 +1,11 @@
 <?php
 use Symfony\Component\Console\Application;
 
-require_once(__DIR__ . '/../vendor/autoload.php');
+#require_once(__DIR__ . '/../vendor/autoload.php');
+#
+require_once(__DIR__ . '../vendor/autoload.php');
 
+#  /home/experiment01/dek01/dek/vendor/autoload.php
 $console = new Application();
 
 $dataProvider = new \Deko\Processor\MultiFileUserListProvider();
