@@ -12,7 +12,7 @@ services:
       - mynet02    
         
    db:
-    image: mysql
+    image: mysql:5.7.22
     container_name: deko_mysql 
     environment:
      - MYSQL_ROOT_PASSWORD=root
